@@ -1,0 +1,20 @@
+{
+  "name": "calystone",
+  "version": "0.0.1",
+  "description": "",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaomelo/calystone.git"
+  },
+  "author": "joão melo <j@melo.plus> (https://joao.melo.plus)",
+  "license": "MIT"
+}
