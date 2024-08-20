@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { Command } from "commander";
 import { readFileSync } from 'fs';
 
@@ -12,7 +14,7 @@ program
 
 program.command('serve')
   .action(() => {
-    console.log('serve');
+    console.log('served');
   });
 
 program.parse();

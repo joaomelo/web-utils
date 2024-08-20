@@ -5,7 +5,10 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "bin": {
+    "calystone": "./cli/index.js"
+  },
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
