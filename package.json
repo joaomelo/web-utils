@@ -16,5 +16,14 @@
     "url": "git+https://github.com/joaomelo/calystone.git"
   },
   "author": "joão melo <j@melo.plus> (https://joao.melo.plus)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "eslint": "^9.9.0",
+    "eslint-plugin-vue": "^9.27.0",
+    "globals": "^15.9.0"
+  }
 }

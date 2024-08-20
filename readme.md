@@ -2,23 +2,22 @@
 
 It is a open source library for fullstack development of web apps with javascript. It promotes the fast creation and long term manutenability of interactive data centric web apps.
 
-The long term vision of the framework is to provide:
 
- - Data layer to read and write data to a sql relational database.
- - Api to serve data to the frontend or other apps.
- - Ui components to build web interfaces.
- - File-based routing system to simplify how to build web pages.
- - Theme engine to customize the gui design.
- - Authentication system to sign up and sign in users to the app.
- - Authorization system to establish how users can read and write parts of the data.
- - Admin studio to manage the application database.
+- Data layer to read and write data to a sql relational database.
+- Api to serve data to the frontend or other apps.
+- Ui components to build web interfaces.
+- File-based routing system to simplify how to build web pages.
+- Theme engine to customize the gui design.
+- Authentication system to sign up and sign in users to the app.
+- Authorization system to establish how users can read and write parts of the data.
+- Admin studio to manage the application database.
 
-# The Lifecycle
+# Values
 
-1. pages render queries.
-2. pages capture user actions and raise events.
-2. actions handle events and apply side effects.
-3. queries recompute and trigger page reactivity.
+ There are many ways to do something right. Calystone has chosen its path with a set of values that guide its evolution is the years to come.
+
+ - The framework is aimed at data centric interactive web apps like CRMs, RH resources and so on. It don't want to solve every use case.
+ - Things just work. The user can create production ready web apps with minomal steps as possible. 
 
 # Pages
 
@@ -28,6 +27,10 @@ Widgets show queries and convert user actions into system events. They are made 
 
 Components are dummy UI blocks that show data and pass user actions to their parent widgets for processing.
 
+We use the prime face library to enable fast creation of pages. But you can create components of your own.
+
+Crude pages are automatically created.
+
 # Queries
 
 A view configuration of the system data. 
@@ -36,20 +39,40 @@ Views can be simple lists of table data of more complex configurations based on 
 
 Queries are the source for UI widgets that show data to the user.
 
+Queries are automatically created based on the schema.
+
 # Commands
 
 Commands are tasks that will update the underlying data in any way. Commands are triggered by page events or by other commands.
 
-# Data
+Basic commands are created based on the schema.
 
-Is the brigde layer that connects commands and queries to real storage services.
+# Schema
 
-# Values
+The schema is the data structure used by your app. You define it with javascript.
 
- There are many ways to do something right. Calystone has chosen its path with a set of values that guide its evolution is the years to come.
+Every calystone app has a minimal default schema with auth and a key value store.
 
- - All features should remain open source.
- - Commitment to the open web standards in contrast to with technologies steered by single companies.
- - The framework is aimed at transactional interactive web apps.
- - The user can create production ready web apps with many steps as possible. 
- - Ease of creation and maintenance of web apps is more important than the ability of customization. The user can alway use more low-level frameworks to build the app the way they liked.
+When you define tables in your schema it auto enables commands and queries.
+
+You can have data validation at the schema level.
+
+If you will use things like s3, third-party apis you can operate over this resources with queries and commands without a problem. Just the auto resources would not be availabe.
+
+You can also analyse the use of postgresdb foreign data extension to incorporate external data sources to the schema.
+
+# Authentication
+
+....
+
+# Authorization
+
+...
+
+# Serve
+
+calystone serve
+
+# Local development
+
+Can create a postgresdb emulation using pg-mem. This is not suited for produtcion
