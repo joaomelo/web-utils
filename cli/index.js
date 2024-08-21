@@ -2,6 +2,7 @@
 
 import { Command } from "commander";
 import { readFileSync } from 'fs';
+import { serve } from '../server/index.js';
 
 const packageJson = JSON.parse(readFileSync(new URL('../package.json', import.meta.url)));
 
@@ -13,8 +14,6 @@ program
   .version(packageJson.version);
 
 program.command('serve')
-  .action(() => {
-    console.log('served');
-  });
+  .action(() => serve(3000));
 
 program.parse();

@@ -21,7 +21,8 @@
   "author": "joão melo <j@melo.plus> (https://joao.melo.plus)",
   "license": "MIT",
   "dependencies": {
-    "commander": "^12.1.0"
+    "commander": "^12.1.0",
+    "express": "^4.19.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
