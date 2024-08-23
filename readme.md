@@ -19,7 +19,9 @@ It is a open source library for fullstack development of web apps with javascrip
  - The framework is aimed at data centric interactive web apps like CRMs, RH resources and so on. It don't want to solve every use case.
  - Things just work. The user can create production ready web apps with minomal steps as possible. 
 
-# Pages
+# Use
+
+## Pages
 
 Aggregate widgets to show them to the user.
 
@@ -31,7 +33,7 @@ We use the prime face library to enable fast creation of pages. But you can crea
 
 Crude pages are automatically created.
 
-# Queries
+## Queries
 
 A view configuration of the system data. 
 
@@ -41,13 +43,13 @@ Queries are the source for UI widgets that show data to the user.
 
 Queries are automatically created based on the schema.
 
-# Commands
+## Commands
 
 Commands are tasks that will update the underlying data in any way. Commands are triggered by page events or by other commands.
 
 Basic commands are created based on the schema.
 
-# Schema
+## Schema
 
 The schema is the data structure used by your app. You define it with javascript.
 
@@ -61,18 +63,26 @@ If you will use things like s3, third-party apis you can operate over this resou
 
 You can also analyse the use of postgresdb foreign data extension to incorporate external data sources to the schema.
 
-# Authentication
+## Authentication
 
 ....
 
-# Authorization
+## Authorization
 
 ...
 
-# Serve
+## Serve
 
 calystone serve
 
-# Local development
+## Local development
 
 Can create a postgresdb emulation using pg-mem. This is not suited for produtcion
+
+# Architecture
+
+This is a Web App served by NodeJS.
+
+The Web UI is served as a Vue SPA. The static assets that compose this SPA are built with Vite in production mode or proxied to Vite dev server while in development mode.
+
+The commands and queries are provided as dynamic api routes configured with ExpressJS.
