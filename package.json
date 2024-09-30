@@ -1,5 +1,5 @@
 {
-  "name": "calystone",
+  "name": "web-utils",
   "version": "0.0.1",
   "description": "medium rare, please",
   "publishConfig": {
@@ -7,7 +7,7 @@
   },
   "main": "./lib/index.js",
   "bin": {
-    "calystone": "./cli/index.js"
+    "web-utils": "./cli/index.js"
   },
   "type": "module",
   "scripts": {
@@ -16,7 +16,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joaomelo/calystone.git"
+    "url": "git+https://github.com/joaomelo/web-utils.git"
   },
   "author": "joão melo <j@melo.plus> (https://joao.melo.plus)",
   "license": "MIT",

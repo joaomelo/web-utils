@@ -1,4 +1,4 @@
-# Calystone
+# Web-utils
 
 It is a open source library for fullstack development of web apps with javascript. It promotes the fast creation and long term manutenability of interactive data centric web apps.
 
@@ -14,7 +14,7 @@ It is a open source library for fullstack development of web apps with javascrip
 
 # Values
 
- There are many ways to do something right. Calystone has chosen its path with a set of values that guide its evolution is the years to come.
+ There are many ways to do something right. Web-utils has chosen its path with a set of values that guide its evolution is the years to come.
 
  - The framework is aimed at data centric interactive web apps like CRMs, RH resources and so on. It don't want to solve every use case.
  - Things just work. The user can create production ready web apps with minomal steps as possible. 
@@ -53,7 +53,7 @@ Basic commands are created based on the schema.
 
 The schema is the data structure used by your app. You define it with javascript.
 
-Every calystone app has a minimal default schema with auth and a key value store.
+Every Web-utils app has a minimal default schema with auth and a key value store.
 
 When you define tables in your schema it auto enables commands and queries.
 
@@ -73,7 +73,7 @@ You can also analyse the use of postgresdb foreign data extension to incorporate
 
 ## Serve
 
-calystone serve
+Web-utils serve
 
 ## Local development
 
